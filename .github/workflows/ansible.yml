@@ -43,8 +43,5 @@ jobs:
       - name: Install Ansible
         run: pip install ansible
 
-      - name: Install Ansible ROles
-        run: asnible-galaxy install -r roles/requirements.yml
-
       - name: Run Ansible Playbook
         run: ansible-playbook site.yml
