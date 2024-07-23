@@ -1,6 +1,6 @@
 ---
 - name: Call role
-  hosts: all
+  hosts: http://app:8080
   tasks:
     - name: Call Hello World Role
       ansible.builtin.include_role:
